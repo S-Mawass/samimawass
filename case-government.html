@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>National Workforce-Productivity Analytics — Case Study · Sami Mawass</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Case study: workforce-productivity and digital-transformation analytics across 30+ entities and a ~38,000-employee national workforce for a UAE federal government HR authority.">
+  <link rel="canonical" href="https://sami-mawass.github.io/sami-mawass/case-government.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo-mark-light.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Workforce-Productivity Analytics — Case Study · Sami Mawass">
+  <meta property="og:description" content="Analytics across 30+ entities and ~38,000 employees for a UAE federal government HR authority. Power BI, SQL, multi-entity RLS.">
+  <meta property="og:url" content="https://sami-mawass.github.io/sami-mawass/case-government.html">
+  <meta property="og:image" content="https://sami-mawass.github.io/sami-mawass/assets/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Workforce-Productivity Analytics — Case Study · Sami Mawass">
+  <meta name="twitter:description" content="Analytics across 30+ entities, ~38,000 employees, UAE federal government. Power BI · SQL · Multi-entity RLS.">
+  <meta name="twitter:image" content="https://sami-mawass.github.io/sami-mawass/assets/og-image.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="_ds/sami-mawass-azure-fabric-design-system-198030c5-2499-497c-9fab-17663889002f/colors_and_type.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<!-- ===================== NAV ===================== -->
+<header>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="wrap">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+          <img src="assets/logo-mark-dark.svg" alt="Sami Mawass" width="22" height="22">
+          Sami Mawass
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="notes.html">Notes</a>
+          <a href="index.html#stack">Stack</a>
+          <a href="index.html#resume">Résumé/CV</a>
+
+          <div class="nav-drop">
+            <button id="port-drop-btn" class="nav-drop-btn" aria-expanded="false" aria-controls="port-dropdown">
+              Portfolio
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div id="port-dropdown" class="nav-dropdown" role="menu">
+              <a href="client-projects.html" role="menuitem">
+                <svg class="drop-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 21V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14M13 21V11a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v10M3 21h18"/></svg>
+                Client Projects
+              </a>
+            </div>
+          </div>
+
+          <a href="index.html#skills">Skills</a>
+          <a href="index.html#contact" class="nav-cta">Get in touch</a>
+        </div>
+
+        <button id="nav-burger" class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="notes.html">Notes</a>
+        <a href="index.html#stack">Stack</a>
+        <a href="index.html#resume">Résumé/CV</a>
+        <a href="index.html#work">Portfolio</a>
+        <a href="client-projects.html" class="indent">↳ Client Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Get in touch</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+<!-- ===================== PAGE HERO ===================== -->
+<div style="background:var(--grad-ink);color:#F8FAFC;position:relative;overflow:hidden;">
+  <div aria-hidden="true" style="position:absolute;inset:0;background-image:radial-gradient(circle,#1B3A5C 2px,transparent 2px);background-size:34px 34px;opacity:.5;pointer-events:none;"></div>
+  <div class="wrap" style="position:relative;padding:72px 32px 80px;">
+    <a href="client-projects.html" style="display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:12.5px;letter-spacing:.5px;color:rgba(248,250,252,.55);margin-bottom:28px;">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Client Projects
+    </a>
+    <p class="eyebrow eyebrow--cyan">Case Study · Government · UAE</p>
+    <h1 style="color:#F8FAFC;font-family:var(--head);font-weight:700;font-size:46px;letter-spacing:-1.8px;margin:0 0 16px;line-height:1.05;">National Workforce-<br>Productivity Analytics</h1>
+    <p style="font-size:17px;color:rgba(248,250,252,.72);max-width:600px;margin:0 0 28px;line-height:1.6;">
+      Workforce-productivity and digital-transformation analytics for a UAE federal government HR authority — spanning 30+ entities and a national workforce of approximately 38,000 employees.
+    </p>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;">
+      <span style="font-family:var(--mono);font-size:10px;letter-spacing:2px;padding:5px 12px;border-radius:6px;background:rgba(80,230,255,.1);border:1px solid rgba(80,230,255,.2);color:var(--cyan);">Power BI</span>
+      <span style="font-family:var(--mono);font-size:10px;letter-spacing:2px;padding:5px 12px;border-radius:6px;background:rgba(80,230,255,.1);border:1px solid rgba(80,230,255,.2);color:var(--cyan);">SQL</span>
+      <span style="font-family:var(--mono);font-size:10px;letter-spacing:2px;padding:5px 12px;border-radius:6px;background:rgba(80,230,255,.1);border:1px solid rgba(80,230,255,.2);color:var(--cyan);">Multi-Entity RLS</span>
+      <span style="font-family:var(--mono);font-size:10px;letter-spacing:2px;padding:5px 12px;border-radius:6px;background:rgba(80,230,255,.1);border:1px solid rgba(80,230,255,.2);color:var(--cyan);">DAX</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== OUTCOME METRICS ===================== -->
+<section class="sec sec--dark" aria-label="Key outcomes">
+  <div class="wrap">
+    <div class="outcome-grid">
+      <div class="outcome-card reveal">
+        <div class="outcome-val">30+</div>
+        <div class="outcome-label">entities with unified analytics</div>
+      </div>
+      <div class="outcome-card reveal">
+        <div class="outcome-val">~38k</div>
+        <div class="outcome-label">employees in scope</div>
+      </div>
+      <div class="outcome-card reveal">
+        <div class="outcome-val">Federal</div>
+        <div class="outcome-label">government HR authority, UAE</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROBLEM ===================== -->
+<section class="sec sec--ink" aria-labelledby="gov-problem-heading">
+  <div class="wrap" style="max-width:800px;">
+    <p class="case-label">Problem</p>
+    <h2 id="gov-problem-heading">No cross-entity visibility across a 38,000-person national workforce.</h2>
+    <div class="case-prose" style="margin-top:24px;">
+      <p>A UAE federal government HR authority overseeing more than 30 entities had no unified view of workforce productivity or digital transformation progress. Each entity operated independently, reporting through different formats and at different cadences. Federal leadership had no reliable way to benchmark entities or track progress at the national level.</p>
+      <p>The challenge was both technical and structural: data lived in separate systems, access needed to be scoped by entity while still enabling federal-level roll-ups, and KPI definitions needed to be agreed and standardised across the organisation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTEXT ===================== -->
+<section class="sec sec--dark" aria-labelledby="gov-context-heading">
+  <div class="wrap" style="max-width:800px;">
+    <p class="case-label">Context</p>
+    <h2 id="gov-context-heading">Multi-entity hierarchy, strict access control, federal reporting requirements.</h2>
+    <div class="case-prose" style="margin-top:24px;">
+      <p>The solution needed to serve two distinct audiences: entity-level managers who could only see their own data, and federal leadership who needed cross-entity visibility and benchmarking. Any analytics platform had to enforce this boundary reliably in production.</p>
+      <p>Digital transformation KPIs were a specific requirement — tracking adoption of digital initiatives across entities alongside traditional workforce productivity metrics.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== APPROACH + BUILD ===================== -->
+<section class="sec sec--ink" aria-labelledby="gov-build-heading">
+  <div class="wrap" style="max-width:800px;">
+    <p class="case-label">Approach &amp; Build</p>
+    <h2 id="gov-build-heading">Unified model, entity-scoped access, federal roll-up.</h2>
+
+    <div class="arch-diagram" style="margin-top:28px;">
+      <svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" role="img"
+           aria-label="Architecture diagram: Source systems from multiple entities feeding a SQL transformation layer, then a Power BI dataset with multi-entity RLS, serving entity managers and federal leadership through Power BI Service"
+           style="width:100%;min-width:540px;height:auto;display:block;">
+        <defs>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#50E6FF"/><stop offset="50%" stop-color="#0078D4"/><stop offset="100%" stop-color="#15B392"/>
+          </linearGradient>
+          <marker id="arr2" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+            <path d="M0,0 L0,7 L7,3.5 z" fill="rgba(80,230,255,.45)"/>
+          </marker>
+        </defs>
+        <!-- Multiple source boxes -->
+        <rect x="8"   y="50"  width="110" height="44" rx="8" fill="#0D1E30" stroke="rgba(80,230,255,.2)" stroke-width="1"/>
+        <text x="63"  y="71"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#94A3B8">Entity A–Z</text>
+        <text x="63"  y="87"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#475569">Source Systems</text>
+
+        <rect x="8" y="106" width="110" height="44" rx="8" fill="#0D1E30" stroke="rgba(80,230,255,.2)" stroke-width="1"/>
+        <text x="63" y="127" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#94A3B8">HR Data</text>
+        <text x="63" y="143" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#475569">~38k employees</text>
+
+        <rect x="168" y="70" width="130" height="60" rx="9" fill="#0D1E30" stroke="rgba(80,230,255,.25)" stroke-width="1"/>
+        <text x="233" y="96"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#94A3B8">SQL Layer</text>
+        <text x="233" y="114" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#475569">Unified transforms</text>
+
+        <rect x="348" y="70" width="150" height="60" rx="9" fill="#0D1E30" stroke="rgba(0,120,212,.6)" stroke-width="1.5"/>
+        <text x="423" y="94"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#50E6FF">Power BI</text>
+        <text x="423" y="110" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#0078D4">Dataset + Multi-entity</text>
+        <text x="423" y="125" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#0078D4">RLS</text>
+
+        <!-- Two output boxes -->
+        <rect x="548" y="50"  width="140" height="44" rx="8" fill="#0D1E30" stroke="rgba(21,179,146,.3)" stroke-width="1"/>
+        <text x="618" y="71"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#15B392">Entity Managers</text>
+        <text x="618" y="87"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#475569">Own entity only</text>
+
+        <rect x="548" y="106" width="140" height="44" rx="8" fill="#0D1E30" stroke="rgba(0,120,212,.4)" stroke-width="1"/>
+        <text x="618" y="127" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#0078D4">Federal Leadership</text>
+        <text x="618" y="143" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#475569">All entities</text>
+
+        <!-- Arrows -->
+        <line x1="118" y1="72"  x2="166" y2="93"  stroke="rgba(80,230,255,.3)" stroke-width="1.5" marker-end="url(#arr2)"/>
+        <line x1="118" y1="128" x2="166" y2="107" stroke="rgba(80,230,255,.3)" stroke-width="1.5" marker-end="url(#arr2)"/>
+        <line x1="298" y1="100" x2="346" y2="100" stroke="rgba(80,230,255,.4)" stroke-width="1.5" marker-end="url(#arr2)"/>
+        <line x1="498" y1="88"  x2="546" y2="72"  stroke="rgba(80,230,255,.3)" stroke-width="1.5" marker-end="url(#arr2)"/>
+        <line x1="498" y1="112" x2="546" y2="128" stroke="rgba(80,230,255,.3)" stroke-width="1.5" marker-end="url(#arr2)"/>
+      </svg>
+    </div>
+
+    <div class="case-prose" style="margin-top:28px;">
+      <ul>
+        <li><strong>SQL transformation layer</strong> — normalised workforce data from multiple entity sources into a unified schema with consistent field definitions and entity identifiers.</li>
+        <li><strong>Multi-entity RLS</strong> — row-level security scoped to the entity hierarchy, allowing entity-level managers to see their own data and federal leadership to see across all entities simultaneously.</li>
+        <li><strong>KPI definition alignment</strong> — worked with stakeholders to agree productivity and digital-transformation KPI definitions before building. Definitions documented and embedded in DAX measure descriptions.</li>
+        <li><strong>Dashboards</strong> — workforce-productivity dashboards (headcount, productivity ratios, trends) and digital-transformation tracking (initiative progress across entities) delivered for both audience tiers.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OUTCOME ===================== -->
+<section class="sec sec--dark" aria-labelledby="gov-outcome-heading">
+  <div class="wrap" style="max-width:800px;">
+    <p class="case-label">Outcome</p>
+    <h2 id="gov-outcome-heading">Cross-entity analytics live. Federal KPIs visible for the first time.</h2>
+    <div class="case-prose" style="margin-top:24px;">
+      <ul>
+        <li>For the first time, federal leadership had a single, reliable view of workforce productivity and digital-transformation progress across all 30+ entities.</li>
+        <li>Entity managers could access their own dashboards with confidence that data was scoped correctly — no manual access management required.</li>
+        <li>Agreed KPI definitions, embedded in the semantic model, meant every number in every report meant the same thing to every stakeholder.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS & AE RELEVANCE ===================== -->
+<section class="sec sec--ink" aria-labelledby="gov-skills-heading">
+  <div class="wrap" style="max-width:800px;">
+    <p class="case-label">Skills &amp; Analytics Engineering Relevance</p>
+    <h2 id="gov-skills-heading">Security as a first-class design concern.</h2>
+    <div class="case-prose" style="margin-top:24px;">
+      <p>Multi-entity RLS is a pattern that appears repeatedly in enterprise analytics — and getting it wrong has real consequences. The key insight is that security logic belongs in the semantic layer, not in the report. A report that controls its own access is fragile; a model that controls access reliably across every connected report is production-grade.</p>
+      <p>This is directly relevant to analytics engineering: in a dbt + BI tool stack, row-level security policies belong as documented, version-controlled artefacts in the semantic layer — not as ad-hoc filters applied per dashboard.</p>
+    </div>
+    <div class="case-skills">
+      <span class="case-skill-chip">Power BI</span>
+      <span class="case-skill-chip">Multi-Entity RLS</span>
+      <span class="case-skill-chip">DAX</span>
+      <span class="case-skill-chip">T-SQL</span>
+      <span class="case-skill-chip">Stakeholder Alignment</span>
+      <span class="case-skill-chip">KPI Definition</span>
+    </div>
+    <!-- TODO: link to GitHub repo when published
+    <a href="https://github.com/sami-mawass/TODO" target="_blank" rel="noopener" class="proj-link" style="margin-top:24px;">
+      See the code <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    -->
+  </div>
+</section>
+
+<!-- ===================== CTA BAND ===================== -->
+<div class="cta-band">
+  <div class="wrap cta-band-inner" style="text-align:center;">
+    <p class="eyebrow eyebrow--cyan" style="margin-bottom:14px;">Get in touch</p>
+    <h2>Have a model that needs fixing?</h2>
+    <p>Open to BI builds, semantic model audits, and analytics-engineering pilots. Replies within two working days.</p>
+    <a href="index.html#contact" class="btn btn-primary">
+      Start a conversation
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</div>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-inner">
+      <a href="index.html#top" class="foot-brand">
+        <img src="assets/logo-mark-dark.svg" alt="" width="20" height="20" aria-hidden="true">
+        Sami Mawass
+      </a>
+      <p class="foot-copy">© 2026 Sami Mawass. All rights reserved.</p>
+      <div class="foot-links">
+        <a href="https://www.linkedin.com/in/sami-mawass" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/sami-mawass" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="mailto:sami.mawass@outlook.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- TODO: replace YOUR_SITE with your GoatCounter site token
+<script data-goatcounter="https://YOUR_SITE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+-->
+<script src="main.js"></script>
+</body>
+</html>

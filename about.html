@@ -6,9 +6,20 @@
   <title>About — Sami Mawass · Analytics Engineer</title>
 
   <!-- SEO -->
-  <meta name="description" content="About Sami Mawass — a BI professional with SQL, semantic modelling, and reporting expertise, building analytics engineering skills across the GCC and Europe.">
-  <link rel="canonical" href="https://sami-mawass.github.io/about.html">
+  <meta name="description" content="About Sami Mawass — Analytics Engineer with 4+ years in Power BI, SSAS Tabular, SQL, and Microsoft Fabric, delivering across government, higher education, FMCG, and energy.">
+  <link rel="canonical" href="https://sami-mawass.github.io/sami-mawass/about.html">
   <link rel="icon" type="image/svg+xml" href="assets/logo-mark-light.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About — Sami Mawass · Analytics Engineer">
+  <meta property="og:description" content="Analytics Engineer with 4+ years in Power BI, SSAS Tabular, SQL, and Microsoft Fabric. 18+ engagements across 7 countries.">
+  <meta property="og:url" content="https://sami-mawass.github.io/sami-mawass/about.html">
+  <meta property="og:image" content="https://sami-mawass.github.io/sami-mawass/assets/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About — Sami Mawass · Analytics Engineer">
+  <meta name="twitter:description" content="Analytics Engineer with 4+ years in Power BI, SSAS Tabular, SQL, and Microsoft Fabric.">
+  <meta name="twitter:image" content="https://sami-mawass.github.io/sami-mawass/assets/og-image.svg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +30,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 
 <!-- ===================== NAV ===================== -->
 <header>
@@ -32,7 +44,8 @@
 
         <div class="nav-links">
           <a href="index.html">Home</a>
-          <a href="about.html">About</a>
+          <a href="about.html" aria-current="page">About</a>
+          <a href="notes.html">Notes</a>
           <a href="index.html#stack">Stack</a>
           <a href="index.html#resume">Résumé/CV</a>
 
@@ -42,17 +55,9 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div id="port-dropdown" class="nav-dropdown" role="menu">
-              <a href="index.html#work" role="menuitem">
-                <svg class="drop-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-                All Projects
-              </a>
               <a href="client-projects.html" role="menuitem">
                 <svg class="drop-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 21V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14M13 21V11a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v10M3 21h18"/></svg>
                 Client Projects
-              </a>
-              <a href="personal-projects.html" role="menuitem">
-                <svg class="drop-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
-                Personal Projects
               </a>
             </div>
           </div>
@@ -69,11 +74,11 @@
       <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="notes.html">Notes</a>
         <a href="index.html#stack">Stack</a>
         <a href="index.html#resume">Résumé/CV</a>
         <a href="index.html#work">Portfolio</a>
         <a href="client-projects.html" class="indent">↳ Client Projects</a>
-        <a href="personal-projects.html" class="indent">↳ Personal Projects</a>
         <a href="index.html#skills">Skills</a>
         <a href="index.html#contact">Get in touch</a>
       </div>
@@ -81,7 +86,7 @@
   </nav>
 </header>
 
-<main>
+<main id="main-content">
 
 <!-- ===================== PAGE HERO ===================== -->
 <div style="background:var(--grad-ink);color:#F8FAFC;position:relative;overflow:hidden;">
@@ -138,7 +143,7 @@
       <div class="about-text reveal">
 
         <h3 style="margin-bottom:12px;">Career path.</h3>
-        <p>I started through an internship in 2021 and transitioned into a full-time role in 2022. Since then I have built my career as a Data &amp; Analytics Consultant at Cedars BC, helping organisations transform data into actionable insights. My experience spans healthcare, FMCG, and international consulting engagements across the Gulf region and Europe.</p>
+        <p>I started through an internship in 2021 and moved into a full-time role in 2022 as a BI Developer and Analytics Engineer at Cedars BC. Since then I've delivered 18+ end-to-end engagements across government, higher education, FMCG, and energy — helping organisations turn opaque reporting into semantic models stakeholders trust. My work spans the GCC and Europe across 7 countries.</p>
 
         <div style="height:28px;"></div>
         <h3 style="margin-bottom:12px;">How I work.</h3>
@@ -146,6 +151,11 @@
         <p>Most reporting fails not because the data is wrong, but because the model is opaque — unclear grain, unnamed measures, no documentation. I build semantic layers a stakeholder can actually follow.</p>
 
         <div style="height:28px;"></div>
+        <div style="background:var(--surface);border:1.5px solid var(--border);border-left:3px solid var(--azure);border-radius:10px;padding:20px 22px;margin-bottom:28px;">
+          <div style="font-family:var(--mono);font-size:11px;letter-spacing:1px;color:var(--azure);text-transform:uppercase;margin-bottom:8px;">Performance highlight</div>
+          <p style="font-size:14.5px;color:var(--fg2);line-height:1.65;margin:0;">Re-architected an SSAS Tabular model into a star schema for a UAE higher-education institution (~25k students) — cutting dataset refresh from <strong style="color:var(--fg1);">~30 min to ~6 min (~80% reduction)</strong> and enabling a clean production RLS hand-off to the client team.</p>
+        </div>
+
         <h3 style="margin-bottom:12px;">Looking ahead.</h3>
         <p>I continue to expand my knowledge in modern analytics platforms, AI-enabled analytics, and data leadership. My goal is straightforward: help organisations make better decisions by turning data into clarity, strategy, and action.</p>
         <p style="font-family:var(--mono);font-size:13px;color:var(--azure);letter-spacing:.3px;margin-top:16px;">SELECT insight FROM data WHERE clarity = TRUE;</p>
@@ -162,7 +172,7 @@
             </div>
             <div>
               <div class="stat-v">18+</div>
-              <div class="stat-l">reports delivered</div>
+              <div class="stat-l">engagements delivered</div>
             </div>
             <div>
               <div class="stat-v">12+</div>
@@ -199,28 +209,28 @@
             <div class="cert-item">
               <span class="cert-dot"></span>
               <div>
-                <div class="cert-name">DP-600 &middot; Microsoft Fabric Analytics Engineer</div>
+                <a href="https://learn.microsoft.com/api/credentials/share/en-us/sami-mawass/30553D322AF57738?sharingId=FEFE150710ECCB63" target="_blank" rel="noopener" class="cert-name">DP-600 &middot; Microsoft Fabric Analytics Engineer</a>
                 <div class="cert-year">2025</div>
               </div>
             </div>
             <div class="cert-item">
               <span class="cert-dot"></span>
               <div>
-                <div class="cert-name">PL-300 &middot; Microsoft Power BI Data Analyst</div>
+                <a href="https://learn.microsoft.com/api/credentials/share/en-us/sami-mawass/172835B4DA17AB2C?sharingId=FEFE150710ECCB63" target="_blank" rel="noopener" class="cert-name">PL-300 &middot; Microsoft Power BI Data Analyst</a>
                 <div class="cert-year">2022</div>
               </div>
             </div>
             <div class="cert-item">
               <span class="cert-dot"></span>
               <div>
-                <div class="cert-name">DP-900 &middot; Azure Data Fundamentals</div>
+                <a href="https://learn.microsoft.com/api/credentials/share/en-us/sami-mawass/7C4B46512DAC4656?sharingId=FEFE150710ECCB63" target="_blank" rel="noopener" class="cert-name">DP-900 &middot; Azure Data Fundamentals</a>
                 <div class="cert-year">2022</div>
               </div>
             </div>
             <div class="cert-item">
               <span class="cert-dot"></span>
               <div>
-                <div class="cert-name">DP-203 &middot; Azure Data Engineer Associate</div>
+                <a href="https://learn.microsoft.com/api/credentials/share/en-us/sami-mawass/9BDE22D05D2D75C?sharingId=FEFE150710ECCB63" target="_blank" rel="noopener" class="cert-name">DP-203 &middot; Azure Data Engineer Associate</a>
                 <div class="cert-year">2021</div>
               </div>
             </div>
@@ -249,6 +259,19 @@
 
 </main>
 
+<!-- ===================== CTA BAND ===================== -->
+<section class="cta-band" aria-labelledby="cta-heading">
+  <div class="wrap cta-band-inner" style="text-align:center;">
+    <p class="eyebrow eyebrow--cyan">Get in touch</p>
+    <h2 id="cta-heading">Have a model that needs rebuilding?</h2>
+    <p>Open to BI builds, analytics-engineering pilots, and contract or full-time roles across UAE, KSA, Qatar, Kuwait, and remote.</p>
+    <a href="index.html#contact" class="btn btn-primary">
+      Get in touch
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
 <!-- ===================== FOOTER ===================== -->
 <footer class="footer">
   <div class="wrap">
@@ -273,6 +296,9 @@
   </div>
 </footer>
 
+<!-- TODO: replace YOUR_SITE with your GoatCounter site token
+<script data-goatcounter="https://YOUR_SITE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+-->
 <script src="main.js"></script>
 </body>
 </html>

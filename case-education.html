@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Institutional Planning Platform — Case Study · Sami Mawass</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Case study: end-to-end SQL → SSAS Tabular → Power BI institutional analytics platform for a UAE higher-education institution (~25k students). Dataset refresh cut ~80% through star-schema re-architecture.">
+  <link rel="canonical" href="https://sami-mawass.github.io/sami-mawass/case-education.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo-mark-light.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Institutional Planning Platform — Case Study · Sami Mawass">
+  <meta property="og:description" content="SQL → SSAS Tabular → Power BI institutional analytics for a UAE higher-education institution. Dataset refresh ~30 min → ~6 min (~80% reduction).">
+  <meta property="og:url" content="https://sami-mawass.github.io/sami-mawass/case-education.html">
+  <meta property="og:image" content="https://sami-mawass.github.io/sami-mawass/assets/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Institutional Planning Platform — Case Study · Sami Mawass">
+  <meta name="twitter:description" content="SQL → SSAS Tabular → Power BI analytics for UAE higher education. ~80% refresh reduction.">
+  <meta name="twitter:image" content="https://sami-mawass.github.io/sami-mawass/assets/og-image.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="_ds/sami-mawass-azure-fabric-design-system-198030c5-2499-497c-9fab-17663889002f/colors_and_type.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<!-- ===================== NAV ===================== -->
+<header>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="wrap">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+          <img src="assets/logo-mark-dark.svg" alt="Sami Mawass" width="22" height="22">
+          Sami Mawass
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="notes.html">Notes</a>
+          <a href="index.html#stack">Stack</a>
+          <a href="index.html#resume">Résumé/CV</a>
+
+          <div class="nav-drop">
+            <button id="port-drop-btn" class="nav-drop-btn" aria-expanded="false" aria-controls="port-dropdown">
+              Portfolio
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div id="port-dropdown" class="nav-dropdown" role="menu">
+              <a href="client-projects.html" role="menuitem">
+                <svg class="drop-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 21V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14M13 21V11a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v10M3 21h18"/></svg>
+                Client Projects
+              </a>
+            </div>
+          </div>
+
+          <a href="index.html#skills">Skills</a>
+          <a href="index.html#contact" class="nav-cta">Get in touch</a>
+        </div>
+
+        <button id="nav-burger" class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="notes.html">Notes</a>
+        <a href="index.html#stack">Stack</a>
+        <a href="index.html#resume">Résumé/CV</a>
+        <a href="index.html#work">Portfolio</a>
+        <a href="client-projects.html" class="indent">↳ Client Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Get in touch</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+<!-- ===================== PAGE HERO ===================== -->
+<div style="background:var(--grad-ink);color:#F8FAFC;position:relative;overflow:hidden;">
+  <div aria-hidden="true" style="position:absolute;inset:0;background-image:radial-gradient(circle,#1B3A5C 2px,transparent 2px);background-size:34px 34px;opacity:.5;pointer-events:none;"></div>
+  <div class="wrap" style="position:relative;padding:72px 32px 80px;">
+    <a href="client-projects.html" style="display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:12.5px;letter-spacing:.5px;color:rgba(248,250,252,.55);margin-bottom:28px;">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Client Projects
+    </a>
+    <p class="eyebrow eyebrow--cyan">Case Study · Higher Education · UAE</p>
+    <h1 style="color:#F8FAFC;font-family:var(--head);font-weight:700;font-size:46px;letter-spacing:-1.8px;margin:0 0 16px;line-height:1.05;">Institutional<br>Planning Platform</h1>
+    <p style="font-size:17px;color:rgba(248,250,252,.72);max-width:600px;margin:0 0 28px;line-height:1.6;">
+      End-to-end semantic analytics for a national higher-education institution (~25k students). SQL source → SSAS Tabular star schema → Power BI on Report Server, with production RLS. Dataset refresh cut from ~30 minutes to ~6.
+    </p>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;">
+      <span style="font-family:var(--mono);font-size:10px;letter-spacing:2px;padding:5px 12px;border-radius:6px;background:rgba(80,230,255,.1);border:1px solid rgba(80,230,255,.2);color:var(--cyan);">SSAS Tabular</span>
+      <span style="font-family:var(--mono);font-size:10px;letter-spacing:2px;padding:5px 12px;border-radius:6px;background:rgba(80,230,255,.1);border:1px solid rgba(80,230,255,.2);color:var(--cyan);">Star Schema</span>
+      <span style="font-family:var(--mono);font-size:10px;letter-spacing:2px;padding:5px 12px;border-radius:6px;background:rgba(80,230,255,.1);border:1px solid rgba(80,230,255,.2);color:var(--cyan);">SQL Server</span>
+      <span style="font-family:var(--mono);font-size:10px;letter-spacing:2px;padding:5px 12px;border-radius:6px;background:rgba(80,230,255,.1);border:1px solid rgba(80,230,255,.2);color:var(--cyan);">Power BI Report Server</span>
+      <span style="font-family:var(--mono);font-size:10px;letter-spacing:2px;padding:5px 12px;border-radius:6px;background:rgba(80,230,255,.1);border:1px solid rgba(80,230,255,.2);color:var(--cyan);">Row-Level Security</span>
+      <span style="font-family:var(--mono);font-size:10px;letter-spacing:2px;padding:5px 12px;border-radius:6px;background:rgba(80,230,255,.1);border:1px solid rgba(80,230,255,.2);color:var(--cyan);">DAX</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== OUTCOME METRICS ===================== -->
+<section class="sec sec--dark" aria-label="Key outcomes">
+  <div class="wrap">
+    <div class="outcome-grid">
+      <div class="outcome-card reveal">
+        <div class="outcome-val">~80%</div>
+        <div class="outcome-label">dataset refresh reduction</div>
+      </div>
+      <div class="outcome-card reveal">
+        <div class="outcome-val">30→6</div>
+        <div class="outcome-label">minutes, dataset refresh</div>
+      </div>
+      <div class="outcome-card reveal">
+        <div class="outcome-val">~25k</div>
+        <div class="outcome-label">student institution, UAE</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROBLEM ===================== -->
+<section class="sec sec--ink" aria-labelledby="problem-heading">
+  <div class="wrap" style="max-width:800px;">
+    <p class="case-label">Problem</p>
+    <h2 id="problem-heading">Opaque reporting with no semantic layer — and a 30-minute refresh.</h2>
+    <div class="case-prose" style="margin-top:24px;">
+      <p>A national higher-education institution in the UAE was managing institutional planning through fragmented sources and manually produced reports. There was no unified semantic layer: each report carried its own logic, measure definitions drifted across files, and no documentation existed to help stakeholders verify what they were looking at.</p>
+      <p>Dataset refresh took approximately 30 minutes — long enough that planning meetings often ran on stale figures. Row-level security was managed inconsistently, with no formal handoff to the internal team.</p>
+      <p>The core issue wasn't missing data — it was a model architecture that hadn't been designed to support scale, clarity, or trust.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTEXT ===================== -->
+<section class="sec sec--dark" aria-labelledby="context-heading">
+  <div class="wrap" style="max-width:800px;">
+    <p class="case-label">Context</p>
+    <h2 id="context-heading">On-premise stack, multi-role access, accreditation requirements.</h2>
+    <div class="case-prose" style="margin-top:24px;">
+      <p>The institution operated on an on-premise Microsoft stack: SQL Server as the source system, with Power BI Report Server for distribution. Reporting needed to serve multiple user roles — institutional planners, faculty leads, and executive stakeholders — each with different data access requirements.</p>
+      <p>Reports fed into accreditation workflows, where accuracy and consistency were non-negotiable. The solution needed to be auditable, maintainable, and owned by the internal team after handoff.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== APPROACH ===================== -->
+<section class="sec sec--ink" aria-labelledby="approach-heading">
+  <div class="wrap" style="max-width:800px;">
+    <p class="case-label">Approach</p>
+    <h2 id="approach-heading">Audit, re-architect, document, hand off.</h2>
+    <div class="case-prose" style="margin-top:24px;">
+      <ul>
+        <li><strong>Audit the existing model</strong> — map the current data grain, identify repeated logic and conflicting measure definitions, document what was implicit.</li>
+        <li><strong>Re-architect into a star schema</strong> — separate fact and dimension tables cleanly; eliminate the implicit many-to-many relationships causing slow refresh and inconsistent aggregations.</li>
+        <li><strong>Build the SSAS Tabular semantic model</strong> — define a shared DAX measure library, standardise KPI naming, and implement calculation groups for time intelligence.</li>
+        <li><strong>Design and implement production RLS</strong> — role-based row-level security scoped to institutional hierarchy, with written documentation enabling the internal team to manage access going forward.</li>
+        <li><strong>Deliver Power BI reports</strong> — live connection from Report Server to the SSAS model, scoped to the final agreed KPI set.</li>
+        <li><strong>Train the internal owner</strong> — a business user was trained to manage RLS independently, reducing dependency on the analytics team post-handoff.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BUILD ===================== -->
+<section class="sec sec--dark" aria-labelledby="build-heading">
+  <div class="wrap" style="max-width:800px;">
+    <p class="case-label">Architecture</p>
+    <h2 id="build-heading">Source → Transform → Semantic Model → Report → Users.</h2>
+
+    <div class="arch-diagram" style="margin-top:28px;">
+      <svg viewBox="0 0 820 200" xmlns="http://www.w3.org/2000/svg" role="img"
+           aria-label="Architecture diagram: Source database feeding SQL transformation layer, SSAS Tabular semantic model, Power BI Report Server, and end users with role-level security"
+           style="width:100%;min-width:600px;height:auto;display:block;">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#50E6FF"/><stop offset="50%" stop-color="#0078D4"/><stop offset="100%" stop-color="#15B392"/>
+          </linearGradient>
+          <marker id="arr" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+            <path d="M0,0 L0,7 L7,3.5 z" fill="rgba(80,230,255,.45)"/>
+          </marker>
+        </defs>
+        <!-- Boxes -->
+        <rect x="8"   y="70" width="130" height="60" rx="9" fill="#0D1E30" stroke="rgba(80,230,255,.25)" stroke-width="1"/>
+        <text x="73"  y="96"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#94A3B8">Source DB</text>
+        <text x="73"  y="114" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#475569">SQL Server</text>
+
+        <rect x="188" y="70" width="140" height="60" rx="9" fill="#0D1E30" stroke="rgba(80,230,255,.25)" stroke-width="1"/>
+        <text x="258" y="96"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#94A3B8">SQL Layer</text>
+        <text x="258" y="114" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#475569">Views / Stored Procs</text>
+
+        <rect x="378" y="70" width="160" height="60" rx="9" fill="#0D1E30" stroke="rgba(0,120,212,.6)" stroke-width="1.5"/>
+        <text x="458" y="96"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#50E6FF">SSAS Tabular</text>
+        <text x="458" y="114" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#0078D4">Star Schema + DAX</text>
+
+        <rect x="588" y="70" width="130" height="60" rx="9" fill="#0D1E30" stroke="rgba(80,230,255,.25)" stroke-width="1"/>
+        <text x="653" y="96"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#94A3B8">Power BI RS</text>
+        <text x="653" y="114" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#475569">Report Server</text>
+
+        <rect x="762" y="70" width="50" height="60" rx="9" fill="#0D1E30" stroke="rgba(21,179,146,.4)" stroke-width="1"/>
+        <text x="787" y="97"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#15B392">Users</text>
+        <text x="787" y="113" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#475569">RLS</text>
+
+        <!-- Arrows -->
+        <line x1="138" y1="100" x2="186" y2="100" stroke="rgba(80,230,255,.4)" stroke-width="1.5" marker-end="url(#arr)"/>
+        <line x1="328" y1="100" x2="376" y2="100" stroke="rgba(80,230,255,.4)" stroke-width="1.5" marker-end="url(#arr)"/>
+        <line x1="538" y1="100" x2="586" y2="100" stroke="rgba(80,230,255,.4)" stroke-width="1.5" marker-end="url(#arr)"/>
+        <line x1="718" y1="100" x2="760" y2="100" stroke="rgba(80,230,255,.4)" stroke-width="1.5" marker-end="url(#arr)"/>
+
+        <!-- Step labels -->
+        <text x="73"  y="170" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#334155">Extract</text>
+        <text x="258" y="170" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#334155">Transform</text>
+        <text x="458" y="170" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#0078D4">Semantic Model</text>
+        <text x="653" y="170" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#334155">Serve</text>
+        <text x="787" y="170" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#334155">Consume</text>
+      </svg>
+    </div>
+
+    <div class="case-prose" style="margin-top:28px;">
+      <p>The SSAS Tabular model sits at the centre of the stack as the single source of truth — a pattern that maps directly to what a well-designed dbt project achieves in a modern data warehouse. The SQL transformation layer handles extraction and grain normalisation; the semantic model handles business logic; the reports handle presentation. Each layer has a single responsibility.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OUTCOME ===================== -->
+<section class="sec sec--ink" aria-labelledby="outcome-heading">
+  <div class="wrap" style="max-width:800px;">
+    <p class="case-label">Outcome</p>
+    <h2 id="outcome-heading">~80% faster refresh. Internally owned RLS. Reports used in accreditation.</h2>
+    <div class="case-prose" style="margin-top:24px;">
+      <ul>
+        <li>Dataset refresh dropped from approximately 30 minutes to approximately 6 — an ~80% reduction — achieved through star-schema re-architecture that eliminated inefficient many-to-many joins.</li>
+        <li>Row-level security is now managed entirely by an internal business user, trained during the engagement. No ongoing dependency on the analytics team.</li>
+        <li>Reports feed directly into accreditation workflows, where consistency and auditability are a requirement. The documented measure library means any stakeholder can verify what a number means.</li>
+        <li>Planning meetings run on current data, not figures that are hours old.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS & AE RELEVANCE ===================== -->
+<section class="sec sec--dark" aria-labelledby="skills-heading">
+  <div class="wrap" style="max-width:800px;">
+    <p class="case-label">Skills &amp; Analytics Engineering Relevance</p>
+    <h2 id="skills-heading">The semantic layer is just the beginning.</h2>
+    <div class="case-prose" style="margin-top:24px;">
+      <p>SSAS Tabular is the semantic layer in this stack — the exact role a dbt project fills in a modern cloud architecture. The patterns are the same: a single place to define business logic, a shared measure library, version-controlled definitions, documented lineage. The tooling differs; the thinking doesn't.</p>
+      <p>This engagement confirmed that the biggest leverage in analytics isn't the report — it's the model underneath it. A well-designed star schema with documented measures eliminates an entire class of trust problems downstream.</p>
+    </div>
+    <div class="case-skills">
+      <span class="case-skill-chip">SSAS Tabular</span>
+      <span class="case-skill-chip">Star Schema Design</span>
+      <span class="case-skill-chip">DAX</span>
+      <span class="case-skill-chip">Calculation Groups</span>
+      <span class="case-skill-chip">Row-Level Security</span>
+      <span class="case-skill-chip">T-SQL</span>
+      <span class="case-skill-chip">Power BI Report Server</span>
+      <span class="case-skill-chip">Stakeholder Handoff</span>
+    </div>
+    <!-- TODO: link to GitHub repo when published
+    <a href="https://github.com/sami-mawass/TODO" target="_blank" rel="noopener" class="proj-link" style="margin-top:24px;">
+      See the code <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    -->
+  </div>
+</section>
+
+<!-- ===================== CTA BAND ===================== -->
+<div class="cta-band">
+  <div class="wrap cta-band-inner" style="text-align:center;">
+    <p class="eyebrow eyebrow--cyan" style="margin-bottom:14px;">Get in touch</p>
+    <h2>Have a model that needs fixing?</h2>
+    <p>Open to BI builds, semantic model audits, and analytics-engineering pilots. Replies within two working days.</p>
+    <a href="index.html#contact" class="btn btn-primary">
+      Start a conversation
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</div>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-inner">
+      <a href="index.html#top" class="foot-brand">
+        <img src="assets/logo-mark-dark.svg" alt="" width="20" height="20" aria-hidden="true">
+        Sami Mawass
+      </a>
+      <p class="foot-copy">© 2026 Sami Mawass. All rights reserved.</p>
+      <div class="foot-links">
+        <a href="https://www.linkedin.com/in/sami-mawass" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/sami-mawass" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="mailto:sami.mawass@outlook.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- TODO: replace YOUR_SITE with your GoatCounter site token
+<script data-goatcounter="https://YOUR_SITE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+-->
+<script src="main.js"></script>
+</body>
+</html>

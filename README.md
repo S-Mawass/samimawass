@@ -1,20 +1,52 @@
-Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif) My name is Sami Mawass
-====================================================================================================================================
+# Sami Mawass — Analytics Engineer
 
-Analytics Engineer
-------------------
+**Power BI · SSAS Tabular · DAX · T-SQL · Microsoft Fabric**
 
-Analytics Engineer and Business Intelligence professional with experience designing, building, and delivering modern analytics solutions that help organizations make better decisions through data.
+4+ years · 18+ engagements · 7 countries · government, higher education, FMCG, energy
 
-* 🌍  I'm based in Tripoli, Lebanon
-* ✉️  You can contact me at [sami.mawass@outlook.com](mailto:sami.mawass@outlook.com)
-* 🧠  I'm currently learning Analytics Engineering, Advanced SQL, Python and dbt.
-* 👥  I'm looking to collaborate on Power BI Development, SQL & Data Modeling, Data Visualization & Storytelling and Microsoft Fabric.
+---
 
-<p align="left">
-<a href="https://www.python.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" alt="Python" title="Python" width="36" height="36" /></a><a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" alt="Git" title="Git" width="36" height="36" /></a><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg" alt="VS Code" title="VS Code" width="36" height="36" /></a><a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" alt="PostgreSQL" title="PostgreSQL" width="36" height="36" /></a><a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" alt="Figma" title="Figma" width="36" height="36" /></a><a href="https://portal.azure.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/azure-colored.svg" alt="Microsoft Azure" title="Microsoft Azure" width="36" height="36" /></a>
-</p>
+## What I build
 
-### Socials
+I rebuild opaque reporting into semantic models stakeholders trust. My work covers the full analytics stack — SQL transformation layers, SSAS Tabular semantic models, Power BI delivery, and Microsoft Fabric.
 
-<p align="left"> <a href="https://www.github.com/sami-mawass" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" alt="GitHub" title="GitHub" /> </picture> </a> <a href="https://www.linkedin.com/in/sami-mawass" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" alt="LinkedIn" title="LinkedIn" /> </picture> </a></p>
+**Proof:** Re-architected an SSAS Tabular model into a star schema for a UAE higher-education institution (~25k students). Dataset refresh: **~30 min → ~6 min (~80% reduction).**
+
+---
+
+## Core skills
+
+| Area | Tools |
+|---|---|
+| BI & Visualisation | Power BI Desktop · Service · Report Server · Paginated Reports |
+| Semantic Modelling | SSAS Tabular · DAX · Calculation Groups · Row-Level Security |
+| Query & Database | T-SQL · SQL Server · Power Query (M) |
+| Cloud Platform | Microsoft Fabric · Azure Data Factory · OneLake |
+| Analytics Engineering | dbt (learning) · modular SQL · docs-as-code |
+| Python | Scripting & automation (in progress) |
+
+---
+
+## Currently building
+
+- **dbt fundamentals** — modular SQL, tests, documentation
+- **Fabric Lakehouse patterns** — Delta tables, shortcuts, OneLake architecture
+- **Python for analytics** — scripting, automation, data tooling
+
+---
+
+## Certifications
+
+- DP-600 · Microsoft Fabric Analytics Engineer (2025)
+- PL-300 · Microsoft Power BI Data Analyst (2022)
+- DP-900 · Azure Data Fundamentals (2022)
+- DP-203 · Azure Data Engineer Associate (2021)
+- McKinsey Forward Program (2023)
+
+---
+
+## Links
+
+- 🌐 [sami-mawass.github.io/sami-mawass](https://sami-mawass.github.io/sami-mawass/)
+- 💼 [linkedin.com/in/sami-mawass](https://linkedin.com/in/sami-mawass)
+- 📧 sami.mawass@outlook.com

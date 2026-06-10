@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sami-mawass.github.io/sami-mawass/sitemap.xml
