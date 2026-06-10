@@ -139,4 +139,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Personal project case studies -->
+  <url>
+    <loc>https://sami-mawass.github.io/sami-mawass/case-portfolio-site.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
