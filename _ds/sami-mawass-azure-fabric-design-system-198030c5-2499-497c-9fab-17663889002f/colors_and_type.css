@@ -1,0 +1,152 @@
+/* =====================================================================
+   SAMI MAWASS — "AZURE & FABRIC" DESIGN SYSTEM
+   colors_and_type.css — base tokens + semantic styles
+   Fonts loaded from Google Fonts CDN (see note at bottom).
+   ===================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* ---- BRAND CORE ------------------------------------------------- */
+  --primary:   #0B1B2E;   /* deep navy — primary ink / dark surfaces   */
+  --secondary: #102A47;   /* secondary navy — gradient end, panels      */
+  --azure:     #0078D4;   /* Azure blue — primary brand accent          */
+  --cyan:      #50E6FF;   /* Cyan — highlight, links on dark            */
+  --fabric:    #15B392;   /* Fabric green — secondary accent            */
+
+  /* Light-mode logo gradient stops (slightly desaturated) */
+  --azure-2:   #00A2E0;
+  --fabric-2:  #0E9E8F;
+
+  /* ---- NEUTRAL RAMP (slate) -------------------------------------- */
+  --n50:  #F8FAFC;   /* app surface / page background  */
+  --n100: #F1F5F9;
+  --n200: #E2E8F0;   /* hairline borders               */
+  --n300: #CBD5E1;
+  --n400: #94A3B8;   /* muted / disabled text          */
+  --n500: #64748B;
+  --n600: #475569;   /* secondary text                 */
+  --n700: #334155;
+  --n800: #1E293B;
+  --n900: #0F172A;
+  --white: #FFFFFF;
+
+  /* On-dark line/border tint used inside navy panels */
+  --line-dark: #1B3A5C;
+
+  /* ---- SEMANTIC SURFACES / TEXT (light theme default) ------------ */
+  --bg:        var(--n50);
+  --surface:   var(--white);
+  --surface-2: var(--n100);
+  --fg1:       var(--primary);  /* headings, primary text */
+  --fg2:       var(--n600);     /* body / secondary       */
+  --fg3:       var(--n400);     /* muted / captions       */
+  --border:    var(--n200);
+  --link:      var(--azure);
+
+  /* ---- STATUS (derived to fit the palette) ----------------------- */
+  --success: #0EA371;
+  --warning: #E0A300;
+  --danger:  #DC2626;
+  --info:    var(--azure);
+
+  /* ---- SIGNATURE GRADIENT ---------------------------------------- */
+  --grad-brand: linear-gradient(120deg, #50E6FF 0%, #0078D4 45%, #15B392 100%); /* @kind color */
+  --grad-ink:   linear-gradient(135deg, #0B1B2E 0%, #102A47 100%); /* @kind color */
+  --grad-text:  linear-gradient(120deg, #50E6FF, #0078D4 50%, #15B392); /* @kind color */
+
+  /* ---- TYPE FAMILIES --------------------------------------------- */
+  --head: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif; /* @kind font */
+  --body: 'Inter', ui-sans-serif, system-ui, sans-serif; /* @kind font */
+  --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace; /* @kind font */
+
+  /* ---- TYPE SCALE (px) ------------------------------------------- */
+  --fs-display: 64px;  --lh-display: 1.02; /* @kind other */  --ls-display: -2.4px; /* @kind other */
+  --fs-h1: 42px;       --lh-h1: 1.06; /* @kind other */      --ls-h1: -1.5px; /* @kind other */
+  --fs-h2: 30px;       --lh-h2: 1.12; /* @kind other */      --ls-h2: -1px; /* @kind other */
+  --fs-h3: 22px;       --lh-h3: 1.2; /* @kind other */       --ls-h3: -0.4px; /* @kind other */
+  --fs-lead: 20px;     --lh-lead: 1.5; /* @kind other */
+  --fs-body: 16px;     --lh-body: 1.6; /* @kind other */
+  --fs-small: 14px;    --lh-small: 1.55; /* @kind other */
+  --fs-mono: 14px;
+  /* Eyebrow / kicker — uppercase mono with wide tracking */
+  --fs-kicker: 13px;   --ls-kicker: 3px; /* @kind other */
+
+  /* ---- SPACING SCALE (4px base) ---------------------------------- */
+  --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 24px; --sp-6: 32px; --sp-7: 48px; --sp-8: 64px;
+  --sp-9: 96px; --sp-10: 128px;
+
+  /* ---- RADII ----------------------------------------------------- */
+  --r-xs: 6px;  --r-sm: 10px; --r-md: 14px; --r-lg: 20px;
+  --r-xl: 28px; --r-pill: 999px;
+
+  /* ---- BORDERS --------------------------------------------------- */
+  --bw: 1px; /* @kind other */
+  --border-hair: 1px solid var(--border); /* @kind other */
+  --border-strong: 2px solid var(--primary); /* @kind other */
+
+  /* ---- SHADOWS (cool, navy-tinted) ------------------------------- */
+  --sh-xs: 0 1px 2px rgba(11,27,46,0.06);
+  --sh-sm: 0 1px 3px rgba(11,27,46,0.08), 0 1px 2px rgba(11,27,46,0.06);
+  --sh-md: 0 4px 12px rgba(11,27,46,0.10), 0 2px 4px rgba(11,27,46,0.06);
+  --sh-lg: 0 12px 32px rgba(11,27,46,0.14), 0 4px 8px rgba(11,27,46,0.06);
+  --sh-glow: 0 0 0 1px rgba(0,120,212,0.30), 0 8px 28px rgba(0,120,212,0.22);
+
+  /* ---- MOTION ---------------------------------------------------- */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1); /* @kind other */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --dur-fast: 120ms; /* @kind other */  --dur: 200ms; /* @kind other */  --dur-slow: 360ms; /* @kind other */
+}
+
+/* =====================================================================
+   SEMANTIC ELEMENT STYLES — opt-in via .ds-prose or use the vars above
+   ===================================================================== */
+.ds-display {
+  font-family: var(--head); font-weight: 700;
+  font-size: var(--fs-display); line-height: var(--lh-display);
+  letter-spacing: var(--ls-display); color: var(--fg1);
+}
+.ds-h1 { font-family: var(--head); font-weight: 700; font-size: var(--fs-h1);
+  line-height: var(--lh-h1); letter-spacing: var(--ls-h1); color: var(--fg1); }
+.ds-h2 { font-family: var(--head); font-weight: 600; font-size: var(--fs-h2);
+  line-height: var(--lh-h2); letter-spacing: var(--ls-h2); color: var(--fg1); }
+.ds-h3 { font-family: var(--head); font-weight: 600; font-size: var(--fs-h3);
+  line-height: var(--lh-h3); letter-spacing: var(--ls-h3); color: var(--fg1); }
+.ds-lead { font-family: var(--body); font-weight: 400; font-size: var(--fs-lead);
+  line-height: var(--lh-lead); color: var(--fg2); }
+.ds-body { font-family: var(--body); font-weight: 400; font-size: var(--fs-body);
+  line-height: var(--lh-body); color: var(--fg2); }
+.ds-small { font-family: var(--body); font-size: var(--fs-small);
+  line-height: var(--lh-small); color: var(--fg2); }
+.ds-mono { font-family: var(--mono); font-size: var(--fs-mono);
+  letter-spacing: 0.5px; color: var(--fg2); }
+
+/* Eyebrow / kicker — the signature mono label used across the brand */
+.ds-kicker {
+  font-family: var(--mono); font-weight: 500;
+  font-size: var(--fs-kicker); letter-spacing: var(--ls-kicker);
+  text-transform: uppercase; color: var(--azure);
+}
+
+/* Gradient text treatment (sparingly — for hero numerals / single words) */
+.ds-grad-text {
+  background: var(--grad-text);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+}
+
+/* Section heading with trailing hairline (from the brand guide) */
+.ds-section-head {
+  font-family: var(--head); font-weight: 600; font-size: var(--fs-kicker);
+  letter-spacing: 3px; text-transform: uppercase; color: var(--n600);
+  display: flex; align-items: center; gap: 10px;
+}
+.ds-section-head::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+
+/* =====================================================================
+   NOTE ON FONTS
+   Space Grotesk, Inter, and IBM Plex Mono are all open-source families
+   loaded here from Google Fonts via @import. To self-host, drop the
+   woff2 files in /fonts and replace the @import with @font-face rules.
+   ===================================================================== */
