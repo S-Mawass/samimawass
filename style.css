@@ -464,6 +464,8 @@ h4 { font-size: 15px; font-weight: 600; }
 }
 .cap-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -500,9 +502,49 @@ h4 { font-size: 15px; font-weight: 600; }
   margin-bottom: 14px;
 }
 .cap-icon svg { width: 20px; height: 20px; }
-.cap-card h3 { color: var(--fg1); margin-bottom: 7px; font-size: 15px; }
+.cap-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  color: var(--fg1);
+  margin-bottom: 7px;
+  font-size: 15px;
+}
 .cap-card p  { font-size: 13.5px; color: var(--fg3); line-height: 1.6; }
-.cap-card .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+
+/* Status badge (growth-track cards) */
+.cap-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+  padding: 3px 9px 3px 8px;
+  border-radius: 20px;
+  background: rgba(21,179,146,.08);
+  color: var(--fg2);
+  border: 1px solid rgba(21,179,146,.30);
+  white-space: nowrap;
+}
+.cap-badge::before {
+  content: '';
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--fabric);
+}
+
+/* Tech chips — bottom-aligned footer */
+.cap-card .chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 16px;
+}
 .cap-card .chip {
   font-family: var(--mono);
   font-size: 11px;
@@ -515,6 +557,18 @@ h4 { font-size: 15px; font-weight: 600; }
   transition: border-color var(--dur), background var(--dur);
 }
 .cap-card:hover .chip { border-color: var(--cyan-a20); background: var(--cyan-a10); }
+
+/* Growth-track cards — teal accent */
+.cap-card--growth .cap-icon {
+  background: rgba(21,179,146,.1);
+  border-color: rgba(21,179,146,.25);
+  color: var(--fabric);
+}
+.cap-card--growth::before {
+  background: linear-gradient(90deg, var(--fabric), var(--cyan));
+}
+.cap-card--growth:hover { border-color: rgba(21,179,146,.4); }
+.cap-card--growth:hover .chip { border-color: rgba(21,179,146,.3); background: rgba(21,179,146,.08); }
 
 /* ==========================================================================
    EXPERIENCE (timeline)
