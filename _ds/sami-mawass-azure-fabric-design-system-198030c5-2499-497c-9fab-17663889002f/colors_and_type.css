@@ -34,6 +34,15 @@
   /* On-dark line/border tint used inside navy panels */
   --line-dark: #1B3A5C;
 
+  /* ---- ON-DARK OPACITY TINTS (for inline-style use on ink surfaces) - */
+  --n50-a55:    rgba(248,250,252,.55);  /* breadcrumb / nav link on ink      */
+  --n50-a60:    rgba(248,250,252,.60);  /* hero tag text on ink              */
+  --n50-a72:    rgba(248,250,252,.72);  /* hero subtitle text on ink         */
+  --cyan-a10:   rgba(80,230,255,.10);   /* chip / tag background             */
+  --cyan-a20:   rgba(80,230,255,.20);   /* chip / tag border                 */
+  --azure-a40:  rgba(0,120,212,.40);    /* section accent border             */
+  --fabric-a30: rgba(21,179,146,.30);   /* fabric-tinted accent border       */
+
   /* ---- SEMANTIC SURFACES / TEXT (light theme default) ------------ */
   --bg:        var(--n50);
   --surface:   var(--white);
