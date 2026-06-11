@@ -134,11 +134,12 @@
       </div>
 
       <!-- Engagements delivered chart — cumulative by year-end: 5, 9, 13, 17, 18 -->
-      <div class="hero-chart-card reveal" aria-label="Engagements delivered, cumulative, 2022 to 2026">
+      <div class="hero-chart-card reveal" role="img" aria-label="Engagements delivered, cumulative, 2022 to 2026">
         <div class="hero-chart-header">
           <span class="mono-label">Engagements delivered · cumulative · 2022 → 2026</span>
         </div>
         <svg viewBox="0 0 430 170" aria-hidden="true" style="width:100%;height:auto;display:block;">
+          <style>.c-axis { fill: var(--chart-axis, #5B89A3); }</style>
           <defs>
             <linearGradient id="area-grad" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%"  stop-color="#50E6FF" stop-opacity="0.22"/>
@@ -166,11 +167,11 @@
           <circle cx="305" cy="40"  r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
           <circle cx="395" cy="33"  r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
           <!-- Year labels -->
-          <text x="35"  y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#3B6080">2022</text>
-          <text x="125" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#3B6080">2023</text>
-          <text x="215" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#3B6080">2024</text>
-          <text x="305" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#3B6080">2025</text>
-          <text x="395" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#3B6080">2026</text>
+          <text x="35"  y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" class="c-axis">2022</text>
+          <text x="125" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" class="c-axis">2023</text>
+          <text x="215" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" class="c-axis">2024</text>
+          <text x="305" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" class="c-axis">2025</text>
+          <text x="395" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" class="c-axis">2026</text>
         </svg>
       </div>
 
@@ -230,7 +231,7 @@
         <div class="cap-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
         </div>
-        <h4>Power BI &amp; Reporting</h4>
+        <h3>Power BI &amp; Reporting</h3>
         <p>End-to-end report delivery — Power BI Desktop, Service, and Report Server. Paginated reports, embedded analytics, and executive dashboards built to production standards.</p>
       </div>
 
@@ -238,7 +239,7 @@
         <div class="cap-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="3" width="7" height="7" rx="1"/><rect x="15" y="3" width="7" height="7" rx="1"/><rect x="2" y="14" width="7" height="7" rx="1"/><rect x="15" y="14" width="7" height="7" rx="1"/></svg>
         </div>
-        <h4>Semantic Modelling</h4>
+        <h3>Semantic Modelling</h3>
         <p>SSAS Tabular and Power BI dataset design — star schemas, DAX measures, calculation groups, and row-level security for multi-entity enterprise deployments.</p>
       </div>
 
@@ -246,7 +247,7 @@
         <div class="cap-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
         </div>
-        <h4>SQL &amp; Data Transformation</h4>
+        <h3>SQL &amp; Data Transformation</h3>
         <p>T-SQL views, stored procedures, and analytical models on SQL Server and Azure. Power Query (M) for self-service data shaping. Actively building dbt skills.</p>
       </div>
 
@@ -254,7 +255,7 @@
         <div class="cap-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
         </div>
-        <h4>Microsoft Fabric <em style="font-style:normal;color:var(--muted);font-size:12px;font-weight:400">(In Progress)</em></h4>
+        <h3>Microsoft Fabric <em style="font-style:normal;color:var(--muted);font-size:12px;font-weight:400">(In Progress)</em></h3>
         <p>Hands-on with OneLake, Lakehouse Delta tables, Dataflows Gen2, and the Fabric unified platform. DP-600 certified. Building toward full-stack Fabric delivery.</p>
       </div>
 
@@ -262,7 +263,7 @@
         <div class="cap-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </div>
-        <h4>Enterprise Delivery</h4>
+        <h3>Enterprise Delivery</h3>
         <p>Production access management, user-acceptance testing, stakeholder training, and iterative report sign-off across government, FMCG, higher education, and energy sectors.</p>
       </div>
 
@@ -270,7 +271,7 @@
         <div class="cap-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
         </div>
-        <h4>Analytics Engineering <em style="font-style:normal;color:var(--muted);font-size:12px;font-weight:400">(Building)</em></h4>
+        <h3>Analytics Engineering <em style="font-style:normal;color:var(--muted);font-size:12px;font-weight:400">(Building)</em></h3>
         <p>Applying modular SQL, semantic versioning, and docs-as-code to bridge BI delivery and data engineering. Active dbt and Python learner.</p>
       </div>
 

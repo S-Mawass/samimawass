@@ -42,6 +42,7 @@
   --cyan-a20:   rgba(80,230,255,.20);   /* chip / tag border                 */
   --azure-a40:  rgba(0,120,212,.40);    /* section accent border             */
   --fabric-a30: rgba(21,179,146,.30);   /* fabric-tinted accent border       */
+  --chart-axis: #5B89A3;               /* chart axis labels on ink card (4.83:1 on #081624) */
 
   /* ---- SEMANTIC SURFACES / TEXT (light theme default) ------------ */
   --bg:        var(--n50);
