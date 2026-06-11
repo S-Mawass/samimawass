@@ -481,6 +481,8 @@ h4 { font-size: 15px; font-weight: 600; }
 .cap-icon svg { width: 20px; height: 20px; }
 .cap-card h3 { color: var(--fg1); margin-bottom: 7px; font-size: 15px; }
 .cap-card p  { font-size: 13.5px; color: var(--fg3); line-height: 1.6; }
+.cap-card .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.cap-card .chip  { font-family: var(--mono); font-size: 11px; letter-spacing: .4px; padding: 3px 8px; border-radius: 4px; background: var(--cyan-a10); color: var(--cyan); border: 1px solid var(--cyan-a20); }
 
 /* ==========================================================================
    EXPERIENCE (timeline)
