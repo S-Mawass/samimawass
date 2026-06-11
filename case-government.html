@@ -157,16 +157,33 @@
   </div>
 </section>
 
-<!-- ===================== APPROACH + BUILD ===================== -->
-<section class="sec sec--ink" aria-labelledby="gov-build-heading">
+<!-- ===================== APPROACH ===================== -->
+<section class="sec sec--ink" aria-labelledby="gov-approach-heading">
   <div class="wrap" style="max-width:800px;">
-    <p class="case-label">Approach &amp; Build</p>
-    <h2 id="gov-build-heading">Unified model, entity-scoped access, federal roll-up.</h2>
+    <p class="case-label">Approach</p>
+    <h2 id="gov-approach-heading">Power BI design, bilingual pages, mobile layout.</h2>
+    <div class="case-prose" style="margin-top:24px;">
+      <p>My scope on this engagement was the Power BI Report Server layer. The SQL Server data infrastructure, SSIS extraction pipeline, and SSAS Tabular semantic model were designed and built by a data engineer on the engagement.</p>
+      <ul>
+        <li><strong>Report design</strong> — designed the workforce-productivity dashboard suite across all entities: headcount and trends, productivity ratio tracking, and digital-transformation initiative progress.</li>
+        <li><strong>Bilingual layouts</strong> — built full Arabic and English report versions to meet the organisation's language requirements. Arabic required right-to-left text direction and a mirrored visual composition throughout each page.</li>
+        <li><strong>Mobile-optimised pages</strong> — built dedicated mobile report layouts for each dashboard, re-composing views for portrait small-screen format to support stakeholders accessing reports on tablets and phones.</li>
+        <li><strong>KPI alignment</strong> — worked with the client's HR leadership to agree productivity ratio and digital-transformation KPI definitions before build. Agreed definitions embedded in DAX measure descriptions.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ARCHITECTURE ===================== -->
+<section class="sec sec--dark" aria-labelledby="gov-arch-heading">
+  <div class="wrap" style="max-width:800px;">
+    <p class="case-label">Architecture</p>
+    <h2 id="gov-arch-heading">Custom Sources → SSIS → SQL Server → SSAS → Power BI RS.</h2>
 
     <div class="arch-diagram" style="margin-top:28px;">
-      <svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" role="img"
-           aria-label="Architecture diagram: Source systems from multiple entities feeding a SQL transformation layer, then a Power BI dataset with multi-entity RLS, serving entity managers and federal leadership through Power BI Service"
-           style="width:100%;min-width:540px;height:auto;display:block;">
+      <svg viewBox="0 0 820 200" xmlns="http://www.w3.org/2000/svg" role="img"
+           aria-label="Architecture diagram showing six nodes: multiple custom source systems per entity, SSIS extraction pipeline, shared SQL Server, SSAS Tabular semantic model with multi-entity RLS, Power BI Report Server highlighted as Sami's scope, and bilingual mobile user outputs"
+           style="width:100%;min-width:600px;height:auto;display:block;">
         <defs>
           <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
             <stop offset="0%" stop-color="#50E6FF"/><stop offset="50%" stop-color="#0078D4"/><stop offset="100%" stop-color="#15B392"/>
@@ -175,49 +192,57 @@
             <path d="M0,0 L0,7 L7,3.5 z" fill="rgba(80,230,255,.45)"/>
           </marker>
         </defs>
-        <!-- Multiple source boxes -->
-        <rect x="8"   y="50"  width="110" height="44" rx="8" fill="#0D1E30" stroke="rgba(80,230,255,.2)" stroke-width="1"/>
-        <text x="63"  y="71"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#94A3B8">Entity A–Z</text>
-        <text x="63"  y="87"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#475569">Source Systems</text>
 
-        <rect x="8" y="106" width="110" height="44" rx="8" fill="#0D1E30" stroke="rgba(80,230,255,.2)" stroke-width="1"/>
-        <text x="63" y="127" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#94A3B8">HR Data</text>
-        <text x="63" y="143" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#475569">~38k employees</text>
+        <!-- Box 1: Custom Sources -->
+        <rect x="8" y="70" width="120" height="60" rx="9" fill="#0D1E30" stroke="rgba(80,230,255,.18)" stroke-width="1"/>
+        <text x="68" y="96" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#94A3B8">Custom</text>
+        <text x="68" y="112" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#475569">Sources (30+ entities)</text>
 
-        <rect x="168" y="70" width="130" height="60" rx="9" fill="#0D1E30" stroke="rgba(80,230,255,.25)" stroke-width="1"/>
-        <text x="233" y="96"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#94A3B8">SQL Layer</text>
-        <text x="233" y="114" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#475569">Unified transforms</text>
+        <!-- Box 2: SSIS -->
+        <rect x="153" y="70" width="115" height="60" rx="9" fill="#0D1E30" stroke="rgba(80,230,255,.18)" stroke-width="1"/>
+        <text x="210" y="96" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#94A3B8">SSIS</text>
+        <text x="210" y="112" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#475569">ETL Pipeline</text>
 
-        <rect x="348" y="70" width="150" height="60" rx="9" fill="#0D1E30" stroke="rgba(0,120,212,.6)" stroke-width="1.5"/>
-        <text x="423" y="94"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#50E6FF">Power BI</text>
-        <text x="423" y="110" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#0078D4">Dataset + Multi-entity</text>
-        <text x="423" y="125" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#0078D4">RLS</text>
+        <!-- Box 3: SQL Server -->
+        <rect x="293" y="70" width="120" height="60" rx="9" fill="#0D1E30" stroke="rgba(80,230,255,.18)" stroke-width="1"/>
+        <text x="353" y="96" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#94A3B8">SQL Server</text>
+        <text x="353" y="112" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#475569">Unified staging</text>
 
-        <!-- Two output boxes -->
-        <rect x="548" y="50"  width="140" height="44" rx="8" fill="#0D1E30" stroke="rgba(21,179,146,.3)" stroke-width="1"/>
-        <text x="618" y="71"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#15B392">Entity Managers</text>
-        <text x="618" y="87"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#475569">Own entity only</text>
+        <!-- Box 4: SSAS Tabular -->
+        <rect x="438" y="70" width="140" height="60" rx="9" fill="#0D1E30" stroke="rgba(80,230,255,.18)" stroke-width="1"/>
+        <text x="508" y="96" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#94A3B8">SSAS Tabular</text>
+        <text x="508" y="112" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#475569">Multi-entity RLS</text>
 
-        <rect x="548" y="106" width="140" height="44" rx="8" fill="#0D1E30" stroke="rgba(0,120,212,.4)" stroke-width="1"/>
-        <text x="618" y="127" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#0078D4">Federal Leadership</text>
-        <text x="618" y="143" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#475569">All entities</text>
+        <!-- Box 5: Power BI RS (Sami's scope) -->
+        <rect x="603" y="63" width="140" height="74" rx="9" fill="#0D1E30" stroke="rgba(0,120,212,.65)" stroke-width="1.5"/>
+        <text x="673" y="91" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11" fill="#50E6FF">Power BI RS</text>
+        <text x="673" y="107" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#0078D4">AR / EN · Mobile</text>
+        <text x="673" y="123" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#0078D4">← Sami's scope</text>
+
+        <!-- Box 6: Users -->
+        <rect x="763" y="70" width="50" height="60" rx="9" fill="#0D1E30" stroke="rgba(21,179,146,.35)" stroke-width="1"/>
+        <text x="788" y="97" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#15B392">Users</text>
+        <text x="788" y="113" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#475569">RLS</text>
 
         <!-- Arrows -->
-        <line x1="118" y1="72"  x2="166" y2="93"  stroke="rgba(80,230,255,.3)" stroke-width="1.5" marker-end="url(#arr2)"/>
-        <line x1="118" y1="128" x2="166" y2="107" stroke="rgba(80,230,255,.3)" stroke-width="1.5" marker-end="url(#arr2)"/>
-        <line x1="298" y1="100" x2="346" y2="100" stroke="rgba(80,230,255,.4)" stroke-width="1.5" marker-end="url(#arr2)"/>
-        <line x1="498" y1="88"  x2="546" y2="72"  stroke="rgba(80,230,255,.3)" stroke-width="1.5" marker-end="url(#arr2)"/>
-        <line x1="498" y1="112" x2="546" y2="128" stroke="rgba(80,230,255,.3)" stroke-width="1.5" marker-end="url(#arr2)"/>
+        <line x1="128" y1="100" x2="151" y2="100" stroke="rgba(80,230,255,.4)" stroke-width="1.5" marker-end="url(#arr2)"/>
+        <line x1="268" y1="100" x2="291" y2="100" stroke="rgba(80,230,255,.4)" stroke-width="1.5" marker-end="url(#arr2)"/>
+        <line x1="413" y1="100" x2="436" y2="100" stroke="rgba(80,230,255,.4)" stroke-width="1.5" marker-end="url(#arr2)"/>
+        <line x1="578" y1="100" x2="601" y2="100" stroke="rgba(80,230,255,.4)" stroke-width="1.5" marker-end="url(#arr2)"/>
+        <line x1="743" y1="100" x2="761" y2="100" stroke="rgba(80,230,255,.3)" stroke-width="1.5" marker-end="url(#arr2)"/>
+
+        <!-- Step labels -->
+        <text x="68"  y="170" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#334155">Extract</text>
+        <text x="210" y="170" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#334155">Transform</text>
+        <text x="353" y="170" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#334155">Stage</text>
+        <text x="508" y="170" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#334155">Semantic Model</text>
+        <text x="673" y="170" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#0078D4">BI Layer</text>
+        <text x="788" y="170" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#334155">Consume</text>
       </svg>
     </div>
 
     <div class="case-prose" style="margin-top:28px;">
-      <ul>
-        <li><strong>SQL transformation layer</strong> — normalised workforce data from multiple entity sources into a unified schema with consistent field definitions and entity identifiers.</li>
-        <li><strong>Multi-entity RLS</strong> — row-level security scoped to the entity hierarchy, allowing entity-level managers to see their own data and federal leadership to see across all entities simultaneously.</li>
-        <li><strong>KPI definition alignment</strong> — worked with stakeholders to agree productivity and digital-transformation KPI definitions before building. Definitions documented and embedded in DAX measure descriptions.</li>
-        <li><strong>Dashboards</strong> — workforce-productivity dashboards (headcount, productivity ratios, trends) and digital-transformation tracking (initiative progress across entities) delivered for both audience tiers.</li>
-      </ul>
+      <p>The full pipeline — multiple custom source systems per entity → SSIS extraction → shared SQL Server → SSAS Tabular semantic model with multi-entity RLS → Power BI Report Server → end users — was a joint delivery. The SSIS, SQL Server, and SSAS layers were built by a data engineer on the engagement; the Power BI Report Server layer (report design, bilingual Arabic/English layouts, and mobile pages) was my contribution.</p>
     </div>
   </div>
 </section>
