@@ -212,7 +212,7 @@ h4 { font-size: 15px; font-weight: 600; }
   color: #fff !important;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 13.5px !important;
+  font-size: 14px !important;
   transition: opacity var(--dur) !important;
 }
 .nav-cta:hover { opacity: .85; background: var(--azure) !important; }
@@ -222,7 +222,7 @@ h4 { font-size: 15px; font-weight: 600; }
   display: none;
   align-items: center;
   justify-content: center;
-  width: 38px; height: 38px;
+  width: 44px; height: 44px;
   border-radius: 8px;
   color: var(--fg2);
   transition: background var(--dur);
@@ -704,8 +704,8 @@ h4 { font-size: 15px; font-weight: 600; }
   align-items: center;
   gap: 6px;
   font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 1.5px;
+  font-size: 12px;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
   color: var(--azure);
   margin-top: 12px;
@@ -1008,7 +1008,7 @@ h4 { font-size: 15px; font-weight: 600; }
 .foot-copy { font-size: 12.5px; color: var(--muted); }
 .foot-links { display: flex; gap: 8px; }
 .foot-links a {
-  width: 34px; height: 34px;
+  width: 44px; height: 44px;
   border-radius: 8px;
   background: var(--surface2);
   border: 1px solid var(--border);
