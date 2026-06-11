@@ -135,14 +135,10 @@
         </div>
       </div>
 
-      <!-- Delivery cadence chart -->
-      <div class="hero-chart-card reveal" aria-label="Delivery cadence 2022 to 2026">
+      <!-- Engagements delivered chart — cumulative by year-end: 5, 9, 13, 17, 18 -->
+      <div class="hero-chart-card reveal" aria-label="Engagements delivered, cumulative, 2022 to 2026">
         <div class="hero-chart-header">
-          <span class="mono-label">Professional Journey · 2022 → 2026</span>
-          <span class="chart-live">
-            <span class="chart-live-dot" aria-hidden="true"></span>
-            LIVE
-          </span>
+          <span class="mono-label">Engagements delivered · cumulative · 2022 → 2026</span>
         </div>
         <svg viewBox="0 0 430 170" aria-hidden="true" style="width:100%;height:auto;display:block;">
           <defs>
@@ -158,19 +154,25 @@
 
           <!-- Baseline -->
           <line x1="6" y1="153" x2="424" y2="153" stroke="rgba(80,230,255,.13)" stroke-width="1"/>
-          <!-- Area fill -->
-          <path d="M8,153 L8,144 L35,128 L64,118 L90,126 L125,100 L154,109 L182,94 L215,76 L244,84 L270,71 L305,52 L330,61 L362,42 L395,32 L420,44 L420,153 Z" fill="url(#area-grad)"/>
+          <!-- Area fill — scale: baseline y=153, max(18) at y=33, 6.667px/unit -->
+          <path d="M35,153 L35,120 L125,93 L215,66 L305,40 L395,33 L395,153 Z" fill="url(#area-grad)"/>
           <!-- Animated line -->
           <polyline class="chart-line"
-            points="8,144 35,128 64,118 90,126 125,100 154,109 182,94 215,76 244,84 270,71 305,52 330,61 362,42 395,32 420,44"
+            points="35,120 125,93 215,66 305,40 395,33"
             fill="none" stroke="#50E6FF" stroke-width="2.5"
             stroke-linecap="round" stroke-linejoin="round" filter="url(#ln-glow)"/>
           <!-- Year dots -->
-          <circle cx="35"  cy="128" r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
-          <circle cx="125" cy="100" r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
-          <circle cx="215" cy="76"  r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
-          <circle cx="305" cy="52"  r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
-          <circle cx="395" cy="32"  r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
+          <circle cx="35"  cy="120" r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
+          <circle cx="125" cy="93"  r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
+          <circle cx="215" cy="66"  r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
+          <circle cx="305" cy="40"  r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
+          <circle cx="395" cy="33"  r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
+          <!-- Value labels -->
+          <text x="35"  y="112" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#50E6FF">5</text>
+          <text x="125" y="85"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#50E6FF">9</text>
+          <text x="215" y="58"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#50E6FF">13</text>
+          <text x="305" y="32"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#50E6FF">17</text>
+          <text x="395" y="25"  text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#50E6FF">18</text>
           <!-- Year labels -->
           <text x="35"  y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#3B6080">2022</text>
           <text x="125" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#3B6080">2023</text>
