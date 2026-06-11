@@ -888,6 +888,7 @@ h4 { font-size: 15px; font-weight: 600; }
   padding: 28px 28px 26px;
   position: relative;
   overflow: hidden;
+  margin-top: 20px;   /* match the .caps-grid row gap */
 }
 .skill-growing::before {
   content: '';
