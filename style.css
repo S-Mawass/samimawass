@@ -1296,3 +1296,11 @@ h4 { font-size: 15px; font-weight: 600; }
   transition: color var(--dur) var(--ease);
 }
 .proj-case-link:hover { color: var(--cyan); }
+
+/* ==========================================================================
+   SPACING UTILITIES
+   ========================================================================== */
+.sp-18 { height: 18px; }
+.sp-20 { height: 20px; }
+.sp-28 { height: 28px; }
+.sp-44 { height: 44px; }
