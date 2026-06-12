@@ -144,128 +144,98 @@
 <section class="sec sec--ink" aria-label="Case study detail">
   <div class="wrap" style="max-width:820px;">
 
-    <!-- Overview -->
+    <!-- Why this project -->
     <div style="margin-bottom:48px;">
-      <p class="case-label" style="color:var(--fabric);">Project Overview</p>
-      <p class="case-prose">Most professionals treat a portfolio website as a chore — a template filled in and forgotten. This project treated it as a product: something with a defined audience, a positioning strategy, a design system, measurable quality criteria, and a continuous deployment pipeline. The result is the site you are reading now — built entirely without a framework, without a CMS, and without outsourcing any part of the decision-making to a template provider. The entire process, from blank canvas to live production, was executed using an AI-native workflow across six tools.</p>
-    </div>
-
-    <!-- Challenge -->
-    <div style="margin-bottom:48px;">
-      <p class="case-label" style="color:var(--fabric);">Challenge</p>
-      <p class="case-prose">The challenge was not purely technical. Any developer can put together a static site. The harder problem was positioning: who is this site for, what should a visitor believe after reading it, and how should the architecture and content hierarchy reflect that intent. At the same time, the technical execution had to meet the same standards I hold client deliverables to — WCAG 2.1 AA accessibility, structured SEO metadata, responsive breakpoints at 360/768/1200px, and a design system coherent enough to scale to 20+ pages without visual drift.</p>
-    </div>
-
-    <!-- Objectives -->
-    <div style="margin-bottom:48px;">
-      <p class="case-label" style="color:var(--fabric);">Objectives</p>
-      <ul class="case-prose" style="padding-left:20px;margin:0;">
-        <li style="margin-bottom:10px;">Define a clear positioning and audience — analytics engineering, BI development, UAE/GCC market — and express it through every content and design decision.</li>
-        <li style="margin-bottom:10px;">Build a reusable design system (tokens for colour, type, spacing, and motion) that would hold together across 21+ pages.</li>
-        <li style="margin-bottom:10px;">Implement 18 anonymised client case studies, each with consistent structure, no invented metrics, and no client names anywhere in the codebase.</li>
-        <li style="margin-bottom:10px;">Meet WCAG 2.1 AA with skip links, ARIA labels, focus-visible outlines, and semantic HTML throughout.</li>
-        <li style="margin-bottom:10px;">Deploy to GitHub Pages with a clean canonical URL structure, sitemap, and Open Graph / Twitter Card metadata on every page.</li>
-      </ul>
-    </div>
-
-    <!-- Solution Approach -->
-    <div style="margin-bottom:48px;">
-      <p class="case-label" style="color:var(--fabric);">Solution Approach</p>
-      <p class="case-prose">Rather than starting with code, the process started with positioning. What does an Analytics Engineer with a Power BI and SSAS Tabular background need a recruiter or client to understand within 30 seconds? That question drove content hierarchy before a single line of HTML was written. The design system — a set of CSS custom properties for a Microsoft-adjacent palette, two typefaces, and a consistent component vocabulary — was designed before being handed off to Claude Code for implementation. Every iteration followed the same pattern: decision first, implementation second, review third.</p>
+      <h2 class="case-label" style="color:var(--fabric);">Why this project</h2>
+      <p class="case-prose">Most portfolios are templates filled in and forgotten. I treated this one as a product: defined the audience (GCC recruiters and consulting clients), set quality criteria up front — WCAG 2.1 AA, full SEO metadata, a design system that holds across 21+ pages — and only then started building. Positioning decisions came first; Claude Code implemented them; every file was reviewed before commit.</p>
     </div>
 
     <!-- AI-Assisted Workflow -->
     <div style="margin-bottom:48px;">
-      <p class="case-label" style="color:var(--fabric);">AI-Assisted Development Workflow</p>
-      <p class="case-prose" style="margin-bottom:28px;">Six tools played distinct, non-overlapping roles. The workflow was additive — each tool handled what it does best, without overlap or redundancy.</p>
+      <h2 class="case-label" style="color:var(--fabric);">AI-Assisted Development Workflow</h2>
+      <p class="case-prose" style="margin-bottom:28px;">Six tools, six distinct jobs.</p>
 
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:8px;">
 
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 18px;border-top:3px solid var(--fabric);">
           <div style="font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--fabric);margin-bottom:8px;">ChatGPT</div>
           <div style="font-family:var(--head);font-weight:600;font-size:14px;color:var(--fg1);margin-bottom:8px;">Brainstorming &amp; Ideation</div>
-          <p style="font-size:13.5px;color:var(--fg2);line-height:1.55;margin:0;">Initial brand positioning exploration, audience definition, content structure ideation, and headline copy drafts. Used for wide-angle thinking before narrowing into execution.</p>
+          <p style="font-size:13.5px;color:var(--fg2);line-height:1.55;margin:0;">Early brand positioning and content brainstorming.</p>
         </div>
 
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 18px;border-top:3px solid var(--fabric);">
           <div style="font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--fabric);margin-bottom:8px;">Claude</div>
           <div style="font-family:var(--head);font-weight:600;font-size:14px;color:var(--fg1);margin-bottom:8px;">Brand Strategy &amp; Design Direction</div>
-          <p style="font-size:13.5px;color:var(--fg2);line-height:1.55;margin:0;">Refined positioning language, UX/UI design guidance, page hierarchy logic, case study structure definition, and content quality review. The strategic and editorial layer.</p>
+          <p style="font-size:13.5px;color:var(--fg2);line-height:1.55;margin:0;">Design direction, page hierarchy, content quality review.</p>
         </div>
 
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 18px;border-top:3px solid var(--fabric);">
           <div style="font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--fabric);margin-bottom:8px;">Claude Code</div>
           <div style="font-family:var(--head);font-weight:600;font-size:14px;color:var(--fg1);margin-bottom:8px;">End-to-End Implementation</div>
-          <p style="font-size:13.5px;color:var(--fg2);line-height:1.55;margin:0;">All front-end engineering: HTML architecture, CSS design system, JavaScript interactivity, accessibility implementation, SEO metadata, and iterative refinement across 21+ files.</p>
+          <p style="font-size:13.5px;color:var(--fg2);line-height:1.55;margin:0;">All implementation — HTML architecture, CSS design system, JS, accessibility, SEO.</p>
         </div>
 
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 18px;border-top:3px solid var(--azure-a40);">
           <div style="font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--azure);margin-bottom:8px;">VS Code</div>
           <div style="font-family:var(--head);font-weight:600;font-size:14px;color:var(--fg1);margin-bottom:8px;">Local Development</div>
-          <p style="font-size:13.5px;color:var(--fg2);line-height:1.55;margin:0;">File management, HTML/CSS editing, live preview, Git integration, and the primary environment for reviewing Claude Code's output before each commit.</p>
+          <p style="font-size:13.5px;color:var(--fg2);line-height:1.55;margin:0;">Local review of every AI-generated change before commit.</p>
         </div>
 
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 18px;border-top:3px solid var(--azure-a40);">
           <div style="font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--azure);margin-bottom:8px;">Git &amp; GitHub</div>
           <div style="font-family:var(--head);font-weight:600;font-size:14px;color:var(--fg1);margin-bottom:8px;">Version Control</div>
-          <p style="font-size:13.5px;color:var(--fg2);line-height:1.55;margin:0;">Atomic commits per feature or page, a clean commit history that documents intent, and the branch protection that lets rapid iteration stay reversible and auditable.</p>
+          <p style="font-size:13.5px;color:var(--fg2);line-height:1.55;margin:0;">Atomic commits; history reads as a project diary.</p>
         </div>
 
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 18px;border-top:3px solid var(--azure-a40);">
           <div style="font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--azure);margin-bottom:8px;">GitHub Pages</div>
           <div style="font-family:var(--head);font-weight:600;font-size:14px;color:var(--fg1);margin-bottom:8px;">Zero-Cost Deployment</div>
-          <p style="font-size:13.5px;color:var(--fg2);line-height:1.55;margin:0;">Automatic deployment from the main branch on every push. No server management, no build pipeline, no cost. Static hosting that mirrors the simplicity of the codebase itself.</p>
+          <p style="font-size:13.5px;color:var(--fg2);line-height:1.55;margin:0;">Push-to-deploy in under 30 seconds, zero cost.</p>
         </div>
 
       </div>
     </div>
 
-    <!-- Design & Branding -->
+    <!-- Technical decisions -->
     <div style="margin-bottom:48px;">
-      <p class="case-label" style="color:var(--fabric);">Design &amp; Branding Process</p>
-      <p class="case-prose">The design system was built around a Microsoft-adjacent palette — Azure Blue (`#0078D4`) and Fabric Green (`#15B392`) as primary and accent, set against a dark navy ink surface and a near-white foreground. This wasn't arbitrary: the portfolio's audience includes people who work in the Microsoft Power Platform ecosystem, and the visual language signals fluency without stating it. Two typefaces were chosen for their contrast and complementarity: Space Grotesk for headings (geometric, confident, modern) and Inter for body text (neutral, highly legible at small sizes). IBM Plex Mono was added for code and metadata — a subtle signal of technical credibility. All values were expressed as CSS custom properties (`--azure`, `--fabric`, `--head`, `--body`, `--mono`) so they could be applied consistently without ever hardcoding a hex value in a component.</p>
-    </div>
-
-    <!-- Development Process -->
-    <div style="margin-bottom:48px;">
-      <p class="case-label" style="color:var(--fabric);">Development Process</p>
-      <p class="case-prose">The build followed a strict constraint: no external frameworks. No Tailwind, no Bootstrap, no React, no build step. Every class was written by hand in a single `style.css` file. This was a deliberate choice — a framework would have solved layout problems faster but introduced a dependency that would require maintenance, upgrades, and familiarity from any future contributor. Instead, CSS custom properties, Grid, and Flexbox were used throughout, with a `@media` breakpoint system targeting 600px, 900px, and 1200px. JavaScript was limited to two concerns: scroll-reveal animations via IntersectionObserver, and the mobile navigation toggle. Accessibility was built-in from the start — not retrofitted — with skip links, `id="main-content"` landmarks, `aria-current="page"` on active nav items, and `focus-visible` outlines on all interactive elements.</p>
-    </div>
-
-    <!-- Deployment -->
-    <div style="margin-bottom:48px;">
-      <p class="case-label" style="color:var(--fabric);">Deployment &amp; Version Control</p>
-      <p class="case-prose">Every change was committed atomically with a descriptive message, producing a commit history that reads as a project diary. Deployment is handled entirely by GitHub Pages — a push to `main` triggers an automatic build and deploy in under 30 seconds. The site is served from a clean canonical URL (`https://sami-mawass.github.io/sami-mawass/`) with a `sitemap.xml` listing all 22 URLs and `robots.txt` pointing crawlers to it. Every page carries canonical link tags, Open Graph metadata, and Twitter Card tags. JSON-LD Person schema is embedded in the homepage for structured data.</p>
-    </div>
-
-    <!-- Key Outcomes -->
-    <div style="margin-bottom:48px;">
-      <p class="case-label" style="color:var(--fabric);">Key Outcomes</p>
+      <h2 class="case-label" style="color:var(--fabric);">Technical decisions</h2>
       <ul class="case-prose" style="padding-left:20px;margin:0;">
-        <li style="margin-bottom:10px;"><strong>~70% development time reduction</strong> — AI-assisted code generation, content drafting, and design iteration compressed a project that would typically take weeks of solo effort into focused sessions.</li>
-        <li style="margin-bottom:10px;"><strong>21+ pages shipped</strong> — homepage, about, client projects, personal projects, and 18 individual case study pages, all from a single coherent design system.</li>
-        <li style="margin-bottom:10px;"><strong>Zero framework dependencies</strong> — the codebase is fully portable, readable without tooling, and has no node_modules, no build step, and no lock file to maintain.</li>
-        <li style="margin-bottom:10px;"><strong>WCAG 2.1 AA</strong> — accessibility built into the architecture, not patched on afterwards.</li>
-        <li style="margin-bottom:10px;"><strong>Full SEO coverage</strong> — canonical URLs, Open Graph, Twitter Card, JSON-LD schema, sitemap, and robots.txt on day one.</li>
-        <li style="margin-bottom:10px;"><strong>Design system coherence at scale</strong> — 21+ pages with consistent visual language, spacing, and component vocabulary maintained through CSS custom properties alone.</li>
+        <li style="margin-bottom:10px;">No frameworks, no build step — pure HTML/CSS/JS keeps the codebase portable and forces every design decision to be explicit rather than inherited from defaults.</li>
+        <li style="margin-bottom:10px;">Design tokens via CSS custom properties — Azure Blue and Fabric Green (a deliberate nod to the Microsoft ecosystem my audience works in), two typefaces, no hardcoded hex values anywhere.</li>
+        <li style="margin-bottom:10px;">Responsive at 600px and 900px with Grid and Flexbox only.</li>
+        <li style="margin-bottom:10px;">JavaScript limited to two concerns — scroll-reveal (IntersectionObserver) and mobile nav.</li>
+        <li style="margin-bottom:10px;">Accessibility built in, not retrofitted — skip links, ARIA landmarks, focus-visible on every interactive element.</li>
+        <li style="margin-bottom:10px;">SEO from day one — canonical URLs, sitemap, Open Graph/Twitter Cards on every page, JSON-LD Person schema.</li>
       </ul>
     </div>
 
-    <!-- Lessons Learned -->
+    <!-- Outcomes -->
     <div style="margin-bottom:48px;">
-      <p class="case-label" style="color:var(--fabric);">Lessons Learned</p>
-      <p class="case-prose">The most valuable lesson was that AI-assisted development rewards clear thinking more than it rewards prompt cleverness. The better the brief — audience, constraints, tone, structure — the better the output. Vague prompts produce vague code. The second lesson was that the review step is not optional: AI-generated code should be read, not just accepted. Every file in this project was reviewed before committing, which caught edge cases, accessibility gaps, and inconsistencies that would have gone unnoticed in a pure copy-paste workflow. The third lesson was about constraint: limiting the technical stack to HTML/CSS/JS forced every design decision to be explicit rather than inherited from a framework's defaults.</p>
+      <h2 class="case-label" style="color:var(--fabric);">Outcomes</h2>
+      <ul class="case-prose" style="padding-left:20px;margin:0;">
+        <li style="margin-bottom:10px;">A coherent design system maintained across 21+ pages with custom properties alone — no visual drift.</li>
+        <li style="margin-bottom:10px;">18 client engagements published as anonymised case studies with zero client names anywhere in the codebase, including comments and filenames.</li>
+        <li style="margin-bottom:10px;">Fully portable: no dependencies, no node_modules, nothing to maintain but the content.</li>
+      </ul>
     </div>
 
-    <!-- Future Enhancements -->
+    <!-- Lessons -->
     <div style="margin-bottom:48px;">
-      <p class="case-label" style="color:var(--fabric);">Future Enhancements</p>
+      <h2 class="case-label" style="color:var(--fabric);">Lessons</h2>
       <ul class="case-prose" style="padding-left:20px;margin:0;">
-        <li style="margin-bottom:10px;">Add GoatCounter analytics to track page-level traffic and identify which case studies attract the most engagement.</li>
-        <li style="margin-bottom:10px;">Replace the OG image SVG placeholder with a proper 1200×630 PNG for richer LinkedIn and Twitter card previews.</li>
-        <li style="margin-bottom:10px;">Add a dark/light mode toggle using `prefers-color-scheme` and a CSS custom property swap.</li>
-        <li style="margin-bottom:10px;">Implement a contact form backed by a serverless function (Formspree or similar) to replace the mailto fallback.</li>
-        <li style="margin-bottom:10px;">Publish the DAX Patterns Library as a living reference section within personal projects once the content is ready.</li>
+        <li style="margin-bottom:10px;">AI-assisted development rewards clear briefs more than clever prompts — vague prompts produce vague code.</li>
+        <li style="margin-bottom:10px;">The review step is not optional: every generated file was read before commit, which caught accessibility gaps a copy-paste workflow would ship.</li>
+        <li style="margin-bottom:10px;">Constraints clarify: banning frameworks made every decision deliberate.</li>
+      </ul>
+    </div>
+
+    <!-- Next -->
+    <div style="margin-bottom:48px;">
+      <h2 class="case-label" style="color:var(--fabric);">Next</h2>
+      <ul class="case-prose" style="padding-left:20px;margin:0;">
+        <li style="margin-bottom:10px;">Privacy-friendly analytics (GoatCounter)</li>
+        <li style="margin-bottom:10px;">Proper 1200×630 OG image for link previews</li>
+        <li style="margin-bottom:10px;">Contact form via serverless function</li>
       </ul>
     </div>
 
@@ -292,7 +262,7 @@
   <div class="wrap cta-band-inner" style="text-align:center;">
     <p class="eyebrow eyebrow--cyan">Get in touch</p>
     <h2>Have data that needs a model?</h2>
-    <p>Open to BI builds, analytics-engineering pilots, and contract or full-time roles across UAE, KSA, Qatar, Kuwait, and remote.</p>
+    <p>Open to BI builds, Microsoft Fabric pilots, and contract or full-time roles across UAE, KSA, Qatar, Kuwait, and remote.</p>
     <a href="index.html#contact" class="btn btn-primary">
       Get in touch
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
