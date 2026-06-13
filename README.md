@@ -1,8 +1,8 @@
-# Sami Mawass — Analytics Engineer
+# Sami Mawass — BI Developer · Power BI, SQL & Microsoft Fabric
 
 **Power BI · SSAS Tabular · DAX · T-SQL · Microsoft Fabric**
 
-4+ years · 18+ engagements · 7 countries · government, higher education, FMCG, energy
+4+ years · ~80% refresh cut (30 to 6 min) · 7 countries · DP-600 Fabric certified · government, higher education, FMCG, energy
 
 ---
 
@@ -40,7 +40,6 @@ I rebuild opaque reporting into semantic models stakeholders trust. My work cove
 - DP-600 · Microsoft Fabric Analytics Engineer (2025)
 - PL-300 · Microsoft Power BI Data Analyst (2022)
 - DP-900 · Azure Data Fundamentals (2022)
-- DP-203 · Azure Data Engineer Associate (2021)
 - McKinsey Forward Program (2023)
 
 ---
